@@ -7,3 +7,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Movie.destroy_all
+
+10.times do |movie|
+  Movie.create(
+    title:        Faker::Movie.title,
+    plot:         Faker::Movie.quote,
+    release_date: Faker::Date.between(from: 100.years.ago, to: Date.today - 1.year)
+  )
+end
