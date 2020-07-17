@@ -20,6 +20,7 @@ group :development do
 
   # Custom
   gem 'rubocop', '~> 0.88.0'
+  gem 'rubocop-rails', '~> 2.6'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
