@@ -17,3 +17,4 @@ Movie.destroy_all
     release_date: Faker::Date.between(from: 100.years.ago, to: Date.today - 1.year)
   )
 end
+puts "#{Movie.all.count} movies created"
