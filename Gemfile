@@ -28,6 +28,11 @@ group :development do
   gem 'rubocop-rails', '~> 2.6'
 end
 
+group :test do
+  # Custom
+  gem 'shoulda-matchers', '~> 4.3'
+end
+
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Custom
