@@ -26,6 +26,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # Custom
+  gem 'pry-rails', '~> 0.3.9'
   gem 'rubocop', '~> 0.88.0'
   gem 'rubocop-rails', '~> 2.6'
 end
